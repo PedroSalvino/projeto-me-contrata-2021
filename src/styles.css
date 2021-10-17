@@ -1,1 +1,12 @@
-/* Add application styles & imports to this file! */
+.bg-escuro {
+  background-color: #23001e;
+}
+.bg-medio {
+  background-color: #9c7a97;
+}
+.bg-alerta {
+  background-color: #ff9f1c;
+}
+.bg-claro {
+  background-color: #f7f9f9;
+}
