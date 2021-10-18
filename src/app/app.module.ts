@@ -8,12 +8,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([{ path: '', component: HomeComponent }]),
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'cadastro', component: CadastroComponent },
+      { path: 'contato', component: ContatoComponent },
+    ]),
   ],
   declarations: [
     AppComponent,
@@ -21,6 +27,8 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
+    CadastroComponent,
+    ContatoComponent,
   ],
   bootstrap: [AppComponent],
 })
