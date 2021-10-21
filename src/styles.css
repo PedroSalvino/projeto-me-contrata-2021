@@ -11,6 +11,19 @@
   background-color: #f7f9f9;
 }
 
+.text-escuro {
+  color: #23001e;
+}
+.text-medio {
+  color: #9c7a97;
+}
+.text-alerta {
+  color: #ff9f1c;
+}
+.text-claro {
+  color: #f7f9f9;
+}
+
 ul {
   list-style-type: none;
 }
