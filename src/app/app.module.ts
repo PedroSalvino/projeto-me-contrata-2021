@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ContatoComponent } from './contato/contato.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { ContatoComponent } from './contato/contato.component';
     HomeComponent,
     CadastroComponent,
     ContatoComponent,
+    LoginComponent,
   ],
   bootstrap: [AppComponent],
 })
