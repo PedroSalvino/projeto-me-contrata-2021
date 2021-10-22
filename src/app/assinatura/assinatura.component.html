@@ -1,0 +1,79 @@
+<div class="modal fade" id="assinaturaModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title text-center h5">Assinatura</p>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <div class="form-group">
+                <label for="usercard">
+                  <span class="mr-2"><i class="fas fa-credit-card"></i></span>
+                  Número do cartão de crédito
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="usercard"
+                  #usercard
+                  required
+                  minlength="5"
+                  maxlength="45"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cardcode">
+                  <span class="mr-2"><i class="fas fa-shield-alt"></i></span>
+                  Código de Segurança
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="cardcode"
+                  #cardcode
+                  required
+                  minlength="8"
+                  maxlength="16"
+                />
+              </div>
+              <div class="form-group">
+                <label for="carddate">
+                  <span class="mr-2"><i class="fas fa-calendar-alt"></i></span>
+                  Validade
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="carddate"
+                  #carddate
+                  required
+                  minlength="6"
+                  maxlength="6"
+                />
+              </div>
+              <span>
+                <p class="text-center">
+                  Esses dados são necessários para gerar a assinatura
+                </p>
+              </span>
+              <hr />
+              <div class="col-md-8 mx-auto">
+                <button class="btn btn-info btn-block">Confirmar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

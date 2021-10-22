@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ContatoComponent } from './contato/contato.component';
 import { LoginComponent } from './login/login.component';
+import { AssinaturaComponent } from './assinatura/assinatura.component';
+import { AreaUsuarioComponent } from './area-usuario/area-usuario.component';
 
 @NgModule({
   imports: [
@@ -20,6 +22,7 @@ import { LoginComponent } from './login/login.component';
       { path: '', component: HomeComponent },
       { path: 'cadastro', component: CadastroComponent },
       { path: 'contato', component: ContatoComponent },
+      { path: 'usuario', component: AreaUsuarioComponent },
     ]),
   ],
   declarations: [
@@ -31,6 +34,8 @@ import { LoginComponent } from './login/login.component';
     CadastroComponent,
     ContatoComponent,
     LoginComponent,
+    AssinaturaComponent,
+    AreaUsuarioComponent,
   ],
   bootstrap: [AppComponent],
 })
