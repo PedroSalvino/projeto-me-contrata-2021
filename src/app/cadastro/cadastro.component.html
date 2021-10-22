@@ -1,0 +1,111 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center">
+          <i class="fas fa-users fa-3x"></i>
+          <h2>Faça seu Cadastro</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="form-group">
+            <label class="input-label" for="username">
+              <span class="mr-2"><i class="fas fa-user fa-lg"></i></span>
+              Nome Completo
+            </label>
+            <input
+              class="form-control"
+              type="text"
+              id="username"
+              #username
+              placeholder="José Silva"
+              minlength="2"
+              maxlength="80"
+              required
+            />
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="input-label" for="useremail">
+                  <span class="mr-2"><i class="fas fa-at fa-lg"></i></span>
+                  E-mail
+                </label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="useremail"
+                  #useremail
+                  placeholder="josesilva@exemplo.com"
+                  minlength="5"
+                  maxlength="45"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="input-label" for="usertel">
+                  <span class="mr-2"
+                    ><i class="fas fa-phone-alt fa -lg"></i
+                  ></span>
+                  Telefone
+                </label>
+                <input
+                  class="form-control"
+                  type="tel"
+                  id="usertel"
+                  #usertel
+                  placeholder="(13) 99922-9999"
+                  minlength="2"
+                  maxlength="80"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="input-label" for="userpass">
+                  <span class="mr-2"><i class="fas fa-lock fa-lg"></i></span>
+                  Senha
+                </label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="userpass"
+                  #userpass
+                  minlength="5"
+                  maxlength="45"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="input-label" for="confpass">
+                  <span class="mr-2"
+                    ><i class="fas fa-unlock-alt fa -lg"></i
+                  ></span>
+                  Confirmar Senha
+                </label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="confpass"
+                  #confpass
+                  placeholder="(13) 99922-9999"
+                  minlength="2"
+                  maxlength="80"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
