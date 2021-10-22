@@ -13,6 +13,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { LoginComponent } from './login/login.component';
 import { AssinaturaComponent } from './assinatura/assinatura.component';
 import { AreaUsuarioComponent } from './area-usuario/area-usuario.component';
+import { ConfirmacaoComponent } from './confirmacao/confirmacao.component';
 
 @NgModule({
   imports: [
@@ -36,6 +37,7 @@ import { AreaUsuarioComponent } from './area-usuario/area-usuario.component';
     LoginComponent,
     AssinaturaComponent,
     AreaUsuarioComponent,
+    ConfirmacaoComponent,
   ],
   bootstrap: [AppComponent],
 })

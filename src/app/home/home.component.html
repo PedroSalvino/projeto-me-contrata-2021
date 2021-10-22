@@ -13,7 +13,13 @@
       <i class="fas fa-suitcase fa-7x"></i>
       <p>Feita para quem deseja entrar no mercado de trabalho</p>
       <div class="col-md-5 mx-auto">
-        <button class="btn btn-primary btn-block">Ver Mais</button>
+        <button
+          class="btn btn-primary btn-block"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          Ver Mais
+        </button>
       </div>
     </div>
     <div class="col py-5 bg-claro">
@@ -67,7 +73,11 @@
       <i class="fas fa-laptop-house fa-7x"></i>
       <p>Feito para quem busca cursos profissionalizantes à distância</p>
       <div class="col-md-5 mx-auto">
-        <button class="btn btn-light bg-alerta text-dark btn-block">
+        <button
+          class="btn btn-light bg-alerta text-dark btn-block"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
           Ver Mais
         </button>
       </div>
@@ -79,7 +89,10 @@
       <strong>Mande sua dúvida ou sugestão</strong>
 
       <div class="col-md-3 mx-auto">
-        <button class="btn btn-outline-primary btn-block my-3">
+        <button
+          class="btn btn-outline-primary btn-block my-3"
+          [routerLink]="['contato']"
+        >
           Envie sua mensagem
         </button>
       </div>
