@@ -9,101 +9,204 @@
       </div>
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <div class="form-group">
-            <label class="input-label" for="username">
-              <span class="mr-2"><i class="fas fa-user fa-lg"></i></span>
-              Nome Completo
-            </label>
-            <input
-              class="form-control"
-              type="text"
-              id="username"
-              #username
-              placeholder="José Silva"
-              minlength="2"
-              maxlength="80"
-              required
-            />
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="input-label" for="useremail">
-                  <span class="mr-2"><i class="fas fa-at fa-lg"></i></span>
-                  E-mail
-                </label>
-                <input
-                  class="form-control"
-                  type="email"
-                  id="useremail"
-                  #useremail
-                  placeholder="josesilva@exemplo.com"
-                  minlength="5"
-                  maxlength="45"
-                  required
-                />
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="form-group">
+              <label class="input-label" for="username">
+                <span class="mr-2"><i class="fas fa-user fa-lg"></i></span>
+                Nome Completo
+              </label>
+              <input
+                class="form-control"
+                type="text"
+                id="username"
+                #username
+                placeholder="José Silva"
+                minlength="2"
+                maxlength="80"
+                required
+              />
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="input-label" for="useremail">
+                    <span class="mr-2"><i class="fas fa-at fa-lg"></i></span>
+                    E-mail
+                  </label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="useremail"
+                    #useremail
+                    placeholder="josesilva@exemplo.com"
+                    minlength="5"
+                    maxlength="45"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="input-label" for="usertel">
+                    <span class="mr-2"
+                      ><i class="fas fa-phone-alt fa -lg"></i
+                    ></span>
+                    Telefone
+                  </label>
+                  <input
+                    class="form-control"
+                    type="tel"
+                    id="usertel"
+                    #usertel
+                    placeholder="(13) 99922-9999"
+                    minlength="2"
+                    maxlength="80"
+                    required
+                  />
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="input-label" for="usertel">
-                  <span class="mr-2"
-                    ><i class="fas fa-phone-alt fa -lg"></i
-                  ></span>
-                  Telefone
-                </label>
-                <input
-                  class="form-control"
-                  type="tel"
-                  id="usertel"
-                  #usertel
-                  placeholder="(13) 99922-9999"
-                  minlength="2"
-                  maxlength="80"
-                  required
-                />
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="input-label" for="userpass">
+                    <span class="mr-2"><i class="fas fa-lock fa-lg"></i></span>
+                    Senha
+                  </label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    id="userpass"
+                    #userpass
+                    minlength="5"
+                    maxlength="45"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="input-label" for="confpass">
+                    <span class="mr-2"
+                      ><i class="fas fa-unlock-alt fa-lg"></i
+                    ></span>
+                    Confirmar Senha
+                  </label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    id="confpass"
+                    #confpass
+                    minlength="2"
+                    maxlength="80"
+                    required
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="input-label" for="userpass">
-                  <span class="mr-2"><i class="fas fa-lock fa-lg"></i></span>
-                  Senha
-                </label>
-                <input
-                  class="form-control"
-                  type="password"
-                  id="userpass"
-                  #userpass
-                  minlength="5"
-                  maxlength="45"
-                  required
-                />
+            <legend>Endereço</legend>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="input-label" for="usercep">
+                    <span class="mr-2"
+                      ><i class="fas fa-map-marker-alt fa-lg"></i
+                    ></span>
+                    CEP
+                  </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="usercep"
+                    #usercep
+                    minlength="11"
+                    maxlength="11"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <label class="input-label" for="userendereco">
+                    <span class="mr-2"><i class="fas fa-home fa-lg"></i></span>
+                    Logradouro
+                  </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="userendereco"
+                    #userendereco
+                    minlength="3"
+                    maxlength="60"
+                    required
+                  />
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="input-label" for="confpass">
-                  <span class="mr-2"
-                    ><i class="fas fa-unlock-alt fa -lg"></i
-                  ></span>
-                  Confirmar Senha
-                </label>
-                <input
-                  class="form-control"
-                  type="password"
-                  id="confpass"
-                  #confpass
-                  placeholder="(13) 99922-9999"
-                  minlength="2"
-                  maxlength="80"
-                  required
-                />
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="input-label" for="userbairro">
+                    <span class="mr-2"><i class="fas fa-road fa-lg"></i></span>
+                    Bairro
+                  </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="userbairro"
+                    #userbairro
+                    minlength="1"
+                    maxlength="60"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="input-label" for="usercidade">
+                    <span class="mr-2"><i class="fas fa-city fa-lg"></i></span>
+                    Cidade
+                  </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="usercidade"
+                    #usercidade
+                    minlength="3"
+                    maxlength="60"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="input-label" for="userestado">
+                    <span class="mr-2"><i class="fas fa-flag fa-lg"></i></span>
+                    Estado
+                  </label>
+                  <select
+                    class="form-control"
+                    id="userestado"
+                    #userestado
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Selecione seu Estado
+                    </option>
+                    <option value="SP">SP</option>
+                  </select>
+                </div>
               </div>
             </div>
-          </div>
+
+            <div class="col-md-6 mx-auto">
+              <button class="btn btn-outline-success btn-block">
+                Inscreva-se
+              </button>
+            </div>
+          </fieldset>
         </div>
       </div>
     </div>
