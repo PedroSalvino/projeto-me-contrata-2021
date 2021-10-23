@@ -14,6 +14,11 @@
   background-color: #140011;
 }
 
+.shadow {
+  -webkit-box-shadow: 5px 6px 15px -4px #000000;
+  box-shadow: 5px 6px 15px -4px #000000;
+}
+
 .text-escuro {
   color: #23001e;
 }
@@ -33,4 +38,8 @@ ul {
 
 .click-modal {
   cursor: pointer;
+}
+
+textarea {
+  resize: none;
 }
