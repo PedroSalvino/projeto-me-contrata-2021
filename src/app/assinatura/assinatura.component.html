@@ -1,8 +1,11 @@
 <div class="modal fade" id="assinaturaModal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <p class="modal-title text-center h5">Assinatura</p>
+      <div class="modal-header text-escuro">
+        <p class="modal-title text-center h5 ml-auto">
+          <span><i class="fas fa-id-card"></i></span>
+          Confirmar sua assinatura
+        </p>
         <button
           type="button"
           class="close"
@@ -12,7 +15,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body bg-light text-escuro">
         <div class="container">
           <div class="row">
             <div class="col-md-10 mx-auto">
@@ -29,6 +32,7 @@
                   required
                   minlength="5"
                   maxlength="45"
+                  placeholder="3658 4587 2014 2000"
                 />
               </div>
               <div class="form-group">
@@ -44,6 +48,7 @@
                   required
                   minlength="8"
                   maxlength="16"
+                  placeholder="258"
                 />
               </div>
               <div class="form-group">
@@ -59,10 +64,11 @@
                   required
                   minlength="6"
                   maxlength="6"
+                  placeholder="02/2024"
                 />
               </div>
               <span>
-                <p class="text-center">
+                <p class="text-center text-alerta h6">
                   Esses dados são necessários para gerar a assinatura
                 </p>
               </span>
