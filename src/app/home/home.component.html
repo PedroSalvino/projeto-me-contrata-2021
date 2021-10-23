@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <div class="row py-5" id="banner">
-    <div class="col py-5 my-5">
-      <h1 class="h2 text-center">Me Contrata</h1>
-      <p class="text-center">
+    <div class="col-md-8 card-banner">
+      <h1 class="h1 text-center">Me Contrata</h1>
+      <p class="text-center h4">
         Facilitando a sua busca por vagas, com ou sem experiência
       </p>
     </div>
@@ -11,10 +11,12 @@
   <div class="row" id="vagas">
     <div class="col text-center py-5 bg-escuro text-light">
       <i class="fas fa-suitcase fa-7x"></i>
-      <p>Feita para quem deseja entrar no mercado de trabalho</p>
+      <p class="my-3 h5">
+        Feito para quem deseja entrar no mercado de trabalho
+      </p>
       <div class="col-md-5 mx-auto">
         <button
-          class="btn btn-primary btn-block"
+          class="btn btn-warning btn-block"
           data-toggle="modal"
           data-target="#exampleModal"
         >
@@ -23,7 +25,7 @@
       </div>
     </div>
     <div class="col py-5 bg-claro">
-      <ul class="my-auto mx-auto">
+      <ul class="my-5 mx-auto">
         <li>
           <p class="text-escuro">
             <i class="fas fa-clock fa-2x mx-3 text-medio"></i>
@@ -48,7 +50,7 @@
   </div>
   <div class="row" id="cursos">
     <div class="col py-5 bg-light">
-      <ul class="my-auto mx-auto">
+      <ul class="my-5 mx-auto">
         <li>
           <p class="text-escuro">
             <i class="fas fa-graduation-cap fa-2x mx-3 text-medio"></i>
@@ -71,10 +73,12 @@
     </div>
     <div class="col text-center py-5 bg-escuro text-light">
       <i class="fas fa-laptop-house fa-7x"></i>
-      <p>Feito para quem busca cursos profissionalizantes à distância</p>
-      <div class="col-md-5 mx-auto">
+      <p class="my-3 h5">
+        Feito para quem busca cursos profissionalizantes à distância
+      </p>
+      <div class="col-md-5 my-2 mx-auto">
         <button
-          class="btn btn-light bg-alerta text-dark btn-block"
+          class="btn btn-info btn-block"
           data-toggle="modal"
           data-target="#exampleModal"
         >
@@ -83,14 +87,15 @@
       </div>
     </div>
   </div>
-  <div class="row py-5 bg-dark">
-    <div class="col text-center my-5">
-      <h2>Fale com a Me Contrata!</h2>
-      <strong>Mande sua dúvida ou sugestão</strong>
-
-      <div class="col-md-3 mx-auto">
+  <div class="row py-5" id="contato">
+    <div class="col text-center my-5 bg-darker">
+      <h2 class="text-alerta">Fale com a Me Contrata!</h2>
+      <strong class="h5 text-light my-4"
+        >Envie pergutas, críticas ou sugestões e entraremos em contato</strong
+      >
+      <div class="col-md-3 my-5 mx-auto">
         <button
-          class="btn btn-outline-primary btn-block my-3"
+          class="btn btn-outline-light btn-block my-3"
           [routerLink]="['contato']"
         >
           Envie sua mensagem
