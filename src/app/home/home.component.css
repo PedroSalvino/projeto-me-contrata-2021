@@ -11,9 +11,7 @@ p {
 .card-banner {
   padding: 150px 0;
   margin: 25px auto;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-#contato {
-  background-image: url(../assets/pattern.svg);
+  background-color: rgba(247, 249, 249, 0.7);
+  -webkit-box-shadow: 5px 6px 15px -4px #000000;
+  box-shadow: 5px 6px 15px -4px #000000;
 }
