@@ -2,5 +2,8 @@ ul {
   display: flex;
 }
 li {
-  margin: 0 20px;
+  margin: 0 12px;
+}
+footer {
+  background-color: #140011;
 }
