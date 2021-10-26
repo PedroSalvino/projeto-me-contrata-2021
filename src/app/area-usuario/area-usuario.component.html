@@ -1,15 +1,24 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-8">
-      <!-- dashboard -->
-      <div class="row my-4">
-        <div class="col-md-10 mx-auto">
-          <div class="btn-group btn-group-lg" role="group">
-            <button type="button" class="btn btn-dark">Vagas</button>
-            <button type="button" class="btn btn-info">Cursos</button>
+    <div class="col">
+      <div class="col-md-6 mt-4 mx-auto">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-dark btn-block">
+              <span class="mr-1"><i class="fas fa-briefcase"></i></span> Vagas
+            </button>
           </div>
-          <hr />
-
+          <div class="col">
+            <button type="button" class="btn btn-outline-dark btn-block">
+              <span class="mr-1"><i class="fas fa-graduation-cap"></i></span>
+              Cursos
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col mx-auto">
           <div class="col-md-8 mx-auto">
             <div class="card">
               <div class="card-header bg-escuro">
@@ -19,15 +28,15 @@
                 </h2>
               </div>
               <div class="card-body bg-light">
-                <p class="h6">
-                  <span class="badge badge-primary bg-escuro">Vaga</span>
+                <p class="text-escuro">
+                  <span class="text-alerta h6">Vaga</span>
                   Desenvolvedor Back-end
                 </p>
-                <p class="h6">
-                  <span class="badge badge-primary bg-escuro">Empresa</span> WPK
+                <p class="text-escuro">
+                  <span class="text-alerta h6">Empresa</span> WPK
                 </p>
-                <p class="h6">
-                  <span class="badge badge-primary bg-escuro">Descrição</span>
+                <p class="text-escuro">
+                  <span class="text-alerta h6">Descrição</span>
                   Lorem ipsum...
                 </p>
               </div>
@@ -41,7 +50,7 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-                <strong class="text-alerta">75% Concluído</strong>
+                <strong class="text-alerta h6">75% Concluído</strong>
               </div>
             </div>
           </div>
@@ -54,18 +63,16 @@
                 </h2>
               </div>
               <div class="card-body">
-                <p class="h6">
-                  <span class="badge badge-primary bg-escuro">Curso</span>
+                <p class="text-escuro">
+                  <span class="text-medio h6">Curso</span>
                   Desenvolvedor Back-end
                 </p>
-                <p class="h6">
-                  <span class="badge badge-primary bg-escuro"
-                    >Oferecido por</span
-                  >
+                <p class="text-escuro">
+                  <span class="text-medio h6">Oferecido por</span>
                   WPK
                 </p>
-                <p class="h6">
-                  <span class="badge badge-primary bg-escuro">Descrição</span>
+                <p class="text-escuro">
+                  <span class="text-medio h6">Descrição</span>
                   Lorem ipsum...
                 </p>
               </div>
@@ -79,15 +86,36 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-                <small class="text-success">100% Concluído</small>
+                <small class="text-success h6">100% Concluído</small>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <!-- perfil -->
+    <div class="col-md-4 mt-5">
+      <div class="col mt-5">
+        <div class="card py-5 bg-darker">
+          <div class="card-body">
+            <p class="card-title text-center">
+              <i class="fas fa-pen fa-7x text-alerta"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h1 class="text-center h4 mt-3">Usuário #521</h1>
+        <h2 class="h5 text-center">Profissão</h2>
+      </div>
+
+      <div class="col-md-8 mx-auto">
+        <button class="btn btn-info btn-block my-3">
+          <span><i class="fas fa-user-edit"></i></span> Perfil
+        </button>
+        <button class="btn btn-outline-info btn-block my-3">
+          <span><i class="fas fa-wallet"></i></span> Assinatura
+        </button>
+      </div>
     </div>
   </div>
 </div>
