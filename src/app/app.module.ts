@@ -27,7 +27,7 @@ import { VagaComponent } from './vaga/vaga.component';
       { path: 'contato', component: ContatoComponent },
       { path: 'usuario', component: AreaUsuarioComponent },
       { path: 'vagas', component: AreaVagasComponent },
-      { path: 'perfil-vaga', component: VagaComponent },
+      { path: 'vaga', component: VagaComponent },
     ]),
   ],
   declarations: [
