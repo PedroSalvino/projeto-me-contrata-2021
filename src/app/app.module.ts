@@ -15,6 +15,7 @@ import { AssinaturaComponent } from './assinatura/assinatura.component';
 import { AreaUsuarioComponent } from './area-usuario/area-usuario.component';
 import { ConfirmacaoComponent } from './confirmacao/confirmacao.component';
 import { AreaVagasComponent } from './area-vagas/area-vagas.component';
+import { VagaComponent } from './vaga/vaga.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { AreaVagasComponent } from './area-vagas/area-vagas.component';
       { path: 'contato', component: ContatoComponent },
       { path: 'usuario', component: AreaUsuarioComponent },
       { path: 'vagas', component: AreaVagasComponent },
+      { path: 'perfil-vaga', component: VagaComponent },
     ]),
   ],
   declarations: [
@@ -41,6 +43,7 @@ import { AreaVagasComponent } from './area-vagas/area-vagas.component';
     AreaUsuarioComponent,
     ConfirmacaoComponent,
     AreaVagasComponent,
+    VagaComponent,
   ],
   bootstrap: [AppComponent],
 })
