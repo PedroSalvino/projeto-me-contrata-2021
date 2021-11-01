@@ -2,33 +2,82 @@
   <div class="row py-3">
     <div class="col-md-10 mx-auto">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 mx-auto">
           <button
             type="button"
-            class="btn btn-outline-dark btn-block"
+            class="btn btn-dark btn-block"
             [routerLink]="['/vagas']"
           >
             <span class="mr-1"><i class="fas fa-briefcase"></i></span> Vagas
           </button>
         </div>
       </div>
-      <div class="row my-3">
+      <div class="row my-2">
         <div class="col mx-auto">
           <div class="form-group">
             <label for="pesquisa">
               <span class="mr-2"><i class="fas fa-search fa-lg"></i></span
               >Pesquise sua vaga desejada
             </label>
-            <input class="form-control" type="text" id="pesquisa" />
+            <input class="form-control" type="text" id="pesquisa" #pesquisa />
           </div>
         </div>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-3">
         <div class="col mx-auto">
+          <p><strong>Ordenar por</strong></p>
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Left</button>
-            <button type="button" class="btn btn-secondary">Middle</button>
-            <button type="button" class="btn btn-secondary">Right</button>
+            <button type="button" class="btn btn-secondary">
+              Mais procurados
+            </button>
+            <button type="button" class="btn btn-info">Sem experiência</button>
+            <button type="button" class="btn btn-warning">Maior salário</button>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="h3">Desenvolvedor Front-end</h2>
+              <p>Descrição da vaga aqui...</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-block btn-info">Ver Mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="h3">Desenvolvedor Front-end</h2>
+              <p>Descrição da vaga aqui...</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-block btn-info">Ver Mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="h3">Desenvolvedor Front-end</h2>
+              <p>Descrição da vaga aqui...</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-block btn-info">Ver Mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="h3">Desenvolvedor Front-end</h2>
+              <p>Descrição da vaga aqui...</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-block btn-info">Ver Mais</button>
+            </div>
           </div>
         </div>
       </div>
