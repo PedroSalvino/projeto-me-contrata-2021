@@ -1,7 +1,7 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row my-3">
     <div class="col-md-10 mx-auto py-3">
-      <div class="row my-2">
+      <div class="row my-3">
         <div class="col-md-4">
           <button
             type="button"
@@ -14,7 +14,7 @@
       </div>
 
       <div class="row my-3">
-        <div class="col py-4 px-4 bg-claro shadow">
+        <div class="col py-5 px-5 bg-claro shadow">
           <div class="row">
             <div class="col-md-4 text-center">
               <span><i class="fas fa-suitcase fa-7x text-alerta"></i></span>
@@ -28,7 +28,9 @@
                     ><i class="fas fa-building"></i> Empresa</span
                   >
                   WPK
-                  <span class="badge bg-alerta text-light click-modal"
+                  <span
+                    class="badge bg-alerta text-light click-modal"
+                    [routerLink]="['/empresa']"
                     >Conheça aqui!</span
                   >
                 </li>
@@ -36,7 +38,7 @@
                   <span class="text-escuro h5"
                     ><i class="fas fa-dollar-sign"></i> Salário</span
                   >
-                  R$ 3.560,00
+                  R$ 3.460,00
                 </li>
                 <li class="my-2">
                   <span class="text-escuro h5"
