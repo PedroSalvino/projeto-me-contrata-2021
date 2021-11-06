@@ -1,8 +1,10 @@
 <div class="modal fade" id="confModalVaga" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <p class="modal-title text-center h5 ml-auto">Confirmação</p>
+      <div class="modal-header bg-light">
+        <p class="modal-title text-center h5 ml-auto text-success">
+          <span><i class="far fa-check-circle"></i></span> Inscrição Concluída
+        </p>
         <button
           type="button"
           class="close"
@@ -17,16 +19,21 @@
           <div class="row">
             <div class="col-md-10 mx-auto">
               <span>
-                <p class="text-center">Obrigado pelo seu feedback!</p>
+                <h1 class="text-center text-escuro h2">Parabéns!</h1>
+                <p>
+                  Você está participando do processo seletivo para a vaga
+                  <strong class="text-escuro">Desenvolvedor Front-end</strong>
+                  oferecida pela empresa WPK
+                </p>
               </span>
               <hr />
               <div class="col-md-8 mx-auto">
                 <button
-                  class="btn btn-secondary btn-block"
+                  class="btn btn-info btn-block"
                   [routerLink]="['usuario']"
                   data-dismiss="modal"
                 >
-                  Sair
+                  Voltar ao meu perfil
                 </button>
               </div>
             </div>
