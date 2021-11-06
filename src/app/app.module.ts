@@ -19,6 +19,7 @@ import { VagaComponent } from './vaga/vaga.component';
 import { EmpresaComponent } from './empresa/empresa.component';
 import { ConfirmacaoCadastroComponent } from './confirmacao-cadastro/confirmacao-cadastro.component';
 import { ConfirmacaoVagaComponent } from './confirmacao-vaga/confirmacao-vaga.component';
+import { VagasService } from './vagas.service';
 
 @NgModule({
   imports: [
@@ -53,5 +54,6 @@ import { ConfirmacaoVagaComponent } from './confirmacao-vaga/confirmacao-vaga.co
     ConfirmacaoVagaComponent,
   ],
   bootstrap: [AppComponent],
+  providers: [VagasService],
 })
 export class AppModule {}
