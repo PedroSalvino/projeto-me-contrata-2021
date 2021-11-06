@@ -18,6 +18,7 @@ import { AreaVagasComponent } from './area-vagas/area-vagas.component';
 import { VagaComponent } from './vaga/vaga.component';
 import { EmpresaComponent } from './empresa/empresa.component';
 import { ConfirmacaoCadastroComponent } from './confirmacao-cadastro/confirmacao-cadastro.component';
+import { ConfirmacaoVagaComponent } from './confirmacao-vaga/confirmacao-vaga.component';
 
 @NgModule({
   imports: [
@@ -49,6 +50,7 @@ import { ConfirmacaoCadastroComponent } from './confirmacao-cadastro/confirmacao
     VagaComponent,
     EmpresaComponent,
     ConfirmacaoCadastroComponent,
+    ConfirmacaoVagaComponent,
   ],
   bootstrap: [AppComponent],
 })
