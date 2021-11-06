@@ -11,7 +11,7 @@ interface Vaga {
 
 @Injectable()
 export class VagasService {
-  listvagas: Array<Vaga>;
+  listvagas: Array<Vaga> = [];
   constructor() {
     this.addVaga(13, 'Designer Gráfico', 'WPK', 2200.85, 'Noturno', '');
     this.addVaga(65, 'Assistente', 'WPK', 1989.84, 'Matutino', '');
