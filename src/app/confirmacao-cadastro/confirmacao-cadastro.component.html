@@ -1,8 +1,11 @@
 <div class="modal fade" id="confModalCadastro" tabindex="-1">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
-        <p class="modal-title text-center h5">Confirmação</p>
+      <div class="modal-header bg-escuro">
+        <p class="modal-title text-center h5 ml-auto text-alerta">
+          <span><i class="fas fa-exclamation-circle"></i></span>
+          Confirmação de Cadastro
+        </p>
         <button
           type="button"
           class="close"
@@ -17,16 +20,22 @@
           <div class="row">
             <div class="col-md-10 mx-auto">
               <span>
-                <p class="text-center">Obrigado pelo seu feedback!</p>
+                <h1 class="text-center h3 text-escuro">Confirmação</h1>
+                <p class="text-center">
+                  Ao clicar em <strong>confirmar</strong>, você concorda que a
+                  plataforma
+                  <strong class="text-escuro">Me Contrata</strong> pode ter
+                  acesso aos seus dados pessoais informados
+                </p>
               </span>
               <hr />
               <div class="col-md-8 mx-auto">
                 <button
-                  class="btn btn-secondary btn-block"
+                  class="btn btn-success btn-block"
                   [routerLink]="['usuario']"
                   data-dismiss="modal"
                 >
-                  Sair
+                  Confirmar meu cadastro
                 </button>
               </div>
             </div>
