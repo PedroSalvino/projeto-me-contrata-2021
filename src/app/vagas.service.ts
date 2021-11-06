@@ -13,8 +13,13 @@ interface Vaga {
 export class VagasService {
   listvagas: Array<Vaga> = [];
   constructor() {
-    this.addVaga(13, 'Designer Gráfico', 'WPK', 2200.85, 'Noturno', '');
-    this.addVaga(65, 'Assistente', 'WPK', 1989.84, 'Matutino', '');
+    if (localStorage.getItem('vagas')) {
+      this.listvagas = JSON.parse(localStorage.getItem('vagas'));
+    } else {
+      this.addVaga(13, 'Designer Gráfico', 'WPK', 2200.85, 'Noturno', '');
+      this.addVaga(65, 'Assistente', 'WPK', 1989.84, 'Matutino', '');
+      localStorage.setItem('vagas', JSON.stringify(this.listvagas));
+    }
   }
 
   addVaga(
@@ -35,12 +40,26 @@ export class VagasService {
     });
   }
 
+  getListaVagas() {
+    this.listvagas = JSON.parse(localStorage.getItem('vagas'));
+    return this.listvagas;
+  }
+
   pesquisarVaga(pesquisa: string) {
     console.log(this.listvagas);
     console.log(
-      this.listvagas.filter(
-        (el) => el.nome.toLocaleUpperCase() == pesquisa.toUpperCase()
+      this.listvagas.filter((el) =>
+        el.nome.toLocaleUpperCase().includes(pesquisa.toUpperCase())
       )
+    );
+    if (this.listvagas.length != 0) {
+      this.listaVagasPesquisa(pesquisa);
+    }
+  }
+
+  listaVagasPesquisa(pesquisa: string) {
+    return this.listvagas.filter((el) =>
+      el.nome.toLocaleUpperCase().includes(pesquisa.toUpperCase())
     );
   }
 }
