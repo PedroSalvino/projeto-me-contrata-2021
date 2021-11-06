@@ -11,5 +11,9 @@ export class AreaVagasComponent implements OnInit {
 
   constructor(public vagas: VagasService) {}
 
+  pesquisar(pesquisa: string) {
+    this.vagas.pesquisarVaga(pesquisa);
+  }
+
   ngOnInit() {}
 }

@@ -36,8 +36,11 @@ export class VagasService {
   }
 
   pesquisarVaga(pesquisa: string) {
-    return this.listvagas.find((el) =>
-      el.nome.toLocaleUpperCase().includes(pesquisa.toUpperCase())
+    console.log(this.listvagas);
+    console.log(
+      this.listvagas.filter(
+        (el) => el.nome.toLocaleUpperCase() == pesquisa.toUpperCase()
+      )
     );
   }
 }
