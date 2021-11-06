@@ -20,6 +20,7 @@ import { EmpresaComponent } from './empresa/empresa.component';
 import { ConfirmacaoCadastroComponent } from './confirmacao-cadastro/confirmacao-cadastro.component';
 import { ConfirmacaoVagaComponent } from './confirmacao-vaga/confirmacao-vaga.component';
 import { VagasService } from './vagas.service';
+import { MiniNavComponent } from './mini-nav/mini-nav.component';
 
 @NgModule({
   imports: [
@@ -52,6 +53,7 @@ import { VagasService } from './vagas.service';
     EmpresaComponent,
     ConfirmacaoCadastroComponent,
     ConfirmacaoVagaComponent,
+    MiniNavComponent,
   ],
   bootstrap: [AppComponent],
   providers: [VagasService],
