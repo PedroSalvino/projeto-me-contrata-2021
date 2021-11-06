@@ -39,12 +39,14 @@
   </div>
   <div class="row my-3">
     <div class="col-md-10 mx-auto py-5 px-5 shadow bg-light">
-      <div class="row my-3" *ngFor="let vaga of vagas.listvagas">
-        <div class="col-md-6">
+      <div class="row my-3">
+        <div class="col-md-6" *ngFor="let vaga of vagas.listvagas">
           <div class="card">
             <div class="card-header bg-escuro">
               <p class="h5 text-center text-alerta">
-                <span><i class="fas fa-briefcase"></i></span> Vaga {{ vaga.id }}
+                <span><i class="fas fa-briefcase"></i></span> Vaga #00{{
+                  vaga.id
+                }}
               </p>
             </div>
             <div class="card-body">
