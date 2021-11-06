@@ -9,7 +9,7 @@ import { VagasService } from '../vagas.service';
 export class AreaVagasComponent implements OnInit {
   pesquisa: string;
 
-  constructor(vagas: VagasService) {}
+  constructor(public vagas: VagasService) {}
 
   ngOnInit() {}
 }
