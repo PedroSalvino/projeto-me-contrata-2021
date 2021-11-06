@@ -17,8 +17,22 @@ export class VagasService {
     if (localStorage.getItem('vagas')) {
       this.listvagas = JSON.parse(localStorage.getItem('vagas'));
     } else {
-      this.addVaga(13, 'Designer Gráfico', 'WPK', 2200.85, 'Noturno', '');
-      this.addVaga(65, 'Assistente', 'WPK', 1989.84, 'Matutino', '');
+      this.addVaga(
+        13,
+        'Designer Gráfico',
+        'WPK',
+        2200.85,
+        'Noturno',
+        'Área e especialização profissional: Artes - Artes Gráficas.   Nível hierárquico: Analista.  Local de trabalho: São Paulo, SP.  Regime de contratação de tipo Efetivo – CLT.    Jornada Período Integral. Atuar no desenvolvimento de material gráfico para midias sociais.'
+      );
+      this.addVaga(
+        65,
+        'Assistente Administrativo',
+        'WPK',
+        1989.84,
+        'Matutino',
+        ' Realizar atividades do setor administrativo, atendimento telefônico, auxilio no atendimento, planilhas de controle em Excel. Ter experiência na área administrativa, conhecimento em informática. Superior cursandoAtuará especifico na equipe de enfermagem. Outros requisitos: Habilidade em Excel.'
+      );
       localStorage.setItem('vagas', JSON.stringify(this.listvagas));
     }
   }
