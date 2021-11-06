@@ -7,7 +7,14 @@ import { VagasService } from '../vagas.service';
   styleUrls: ['./vaga.component.css'],
 })
 export class VagaComponent implements OnInit {
-  constructor(vagas: VagasService) {}
+  index: number = 0;
+  constructor(public vagas: VagasService) {
+    this.index = vagas.getIndex();
+  }
 
   ngOnInit() {}
+
+  getVaga(index: number) {
+    return this.vagas.getVaga(index);
+  }
 }

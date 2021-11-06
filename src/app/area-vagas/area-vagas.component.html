@@ -81,8 +81,8 @@
             <div class="card-footer">
               <button
                 class="btn btn-block btn-warning"
+                (click)="setIndex(vaga.id)"
                 [routerLink]="['/vaga']"
-                (click)="setIndex(i)"
               >
                 Ver Mais
               </button>

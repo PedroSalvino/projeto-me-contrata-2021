@@ -14,20 +14,25 @@
       </div>
 
       <div class="row my-3">
-        <div class="col py-5 px-5 bg-claro shadow">
+        <div
+          class="col py-5 px-5 bg-claro shadow"
+          *ngFor="let vaga of getVaga(this.index)"
+        >
           <div class="row">
             <div class="col-md-4 text-center">
               <span><i class="fas fa-suitcase fa-7x text-alerta"></i></span>
             </div>
             <div class="col">
-              <small class="h5 text-alerta">Processo Seletivo #0022</small>
-              <h1 class="h2">Desenvolvedor Front-end Júnior</h1>
+              <small class="h5 text-alerta"
+                >Processo Seletivo #00{{ vaga.id }}</small
+              >
+              <h1 class="h2">{{ vaga.nome }}</h1>
               <ul class="my-3">
                 <li class="my-2">
                   <span class="text-escuro h5"
                     ><i class="fas fa-building"></i> Empresa</span
                   >
-                  WPK
+                  {{ vaga.empresa }}
                   <span
                     class="badge bg-alerta text-light click-modal"
                     [routerLink]="['/empresa']"
@@ -38,13 +43,13 @@
                   <span class="text-escuro h5"
                     ><i class="fas fa-dollar-sign"></i> Salário</span
                   >
-                  R$ 3.460,00
+                  R$ {{ vaga.salario }}
                 </li>
                 <li class="my-2">
                   <span class="text-escuro h5"
                     ><i class="fas fa-clock"></i> Horário</span
                   >
-                  Matutino
+                  {{ vaga.horario }}
                 </li>
               </ul>
             </div>
@@ -56,13 +61,7 @@
                   ><i class="fas fa-quote-left"></i> Descrição</span
                 >
                 <p class="mt-1">
-                  No seu dia a dia irá trabalhar com desenvolvimento de
-                  funcionalidades e telas de sistema web. Com o apoio de outros
-                  membros do squad. Irá ajudar na tomada de decisões de novas
-                  features e resoluções de bugs e dívidas técnicas. Fazemos
-                  parte de um grupo criador de produtos, de acordo com o
-                  desenvolvimento em alguns momentos você irá transitar pelo
-                  mesmo stack de desenvolvimento de diversos.
+                 {{vaga.descricao}}
                 </p>
               </div>
               <hr />

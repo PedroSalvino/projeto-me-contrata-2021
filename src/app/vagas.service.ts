@@ -12,7 +12,7 @@ interface Vaga {
 @Injectable()
 export class VagasService {
   listvagas: Array<Vaga> = [];
-  index: number;
+  index: number = 0;
   constructor() {
     if (localStorage.getItem('vagas')) {
       this.listvagas = JSON.parse(localStorage.getItem('vagas'));
@@ -66,8 +66,13 @@ export class VagasService {
 
   setIndex(numero: number) {
     this.index = numero;
+    console.log(this.index);
   }
   getIndex() {
     return this.index;
+  }
+
+  getVaga(index: number) {
+    return this.listvagas.filter((el) => el.id == index);
   }
 }
