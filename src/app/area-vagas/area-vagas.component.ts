@@ -15,5 +15,9 @@ export class AreaVagasComponent implements OnInit {
     this.vagas.pesquisarVaga(pesquisa);
   }
 
+  setIndex(index: number) {
+    this.vagas.setIndex(index);
+  }
+
   ngOnInit() {}
 }

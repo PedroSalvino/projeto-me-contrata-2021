@@ -42,7 +42,10 @@
       <div class="row my-3" *ngIf="vagas.listvagas.length > 0">
         <div
           class="col-md-6"
-          *ngFor="let vaga of vagas.listaVagasPesquisa(pesquisa.value)"
+          *ngFor="
+            let vaga of vagas.listaVagasPesquisa(pesquisa.value);
+            index as i
+          "
         >
           <div class="card">
             <div class="card-header bg-escuro">
@@ -79,6 +82,7 @@
               <button
                 class="btn btn-block btn-warning"
                 [routerLink]="['/vaga']"
+                (click)="setIndex(i)"
               >
                 Ver Mais
               </button>
