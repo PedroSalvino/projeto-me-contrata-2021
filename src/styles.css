@@ -44,3 +44,7 @@ textarea {
 .bg-claro {
   background-color: rgba(156, 122, 151, 0.2);
 }
+
+.logo {
+  max-width: 100%;
+}
